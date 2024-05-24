@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+    <header>
+        <img src="./images/icons8-contacts-64.png" alt="Agenda de contatos">
+        <h1>Agenda de Contatos</h1>
+    </header>
+    <form id="formulario">
+        <input type="text" required id="nome" placeholder="Nome">
+        <input type="text" required id="telefone" placeholder="Telefone">
+        <button type="button" onclick="adicionarContato()">Adicionar Contato</button>
+    </form>
+    <table id="contatos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui serão adicionadas as linhas de contatos -->
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
